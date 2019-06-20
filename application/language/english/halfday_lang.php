@@ -1,0 +1,35 @@
+<?php
+	$lang['halfday.CHOOSE_YOUR_OPTION'] = 'CHOOSE YOUR OPTION';
+	$lang['halfday.CHOOSE_YOUR_WEEK'] = 'CHOOSE YOUR DAY(S)';
+	$lang['halfday.Menu'] = 'Menu';
+	$lang['halfday.Nutritional_info'] = 'Nutritional info';
+	$lang['halfday.CHOOSE_PAYMENT_METHOD_THEN_REALIZES_PURCHASE'] = 'CHOOSE YOUR PAYMENT METHOD THEN FINALIZE THE PURCHASE';
+	$lang['halfday.Card'] = 'Credit Card';
+	$lang['halfday.Spot_motoconcho'] = 'Cash on pick up';
+	$lang['halfday.Bank_Transferencai'] = 'Bank Transfer';	
+	$lang['halfday.Summary_of_Your_Order'] = 'Summary of Your Order';
+	$lang['halfday.Date'] = 'Date';
+	$lang['halfday.Product'] = 'Product';
+	$lang['halfday.Price'] = 'Price';
+	$lang['halfday.Total_price'] = 'Total Price';
+	$lang['halfday.Shipping'] = 'Shipping';
+	$lang['halfday.Quantity'] = 'Quantity';
+	$lang['halfday.Send'] = 'Send';
+	$lang['halfday.If_you_have_a_Discount_Coupon_enter_it_here'] = 'If you have a Discount Coupon code, enter it here';
+	$lang['halfday.If_You_Have_A_eGift_Voucher_enter_it_here'] = 'If You Have an e-Gift Voucher code, enter it here';
+	$lang['halfday.Gift_Voucher'] = 'e-Gift Voucher';
+	$lang['halfday.Discount'] = 'Discount';
+	$lang['halfday.Total_Purchase'] = 'Total Purchase';
+	$lang['halfday.Checkout'] = 'Checkout';
+	$lang['halfday.Please_Enter_Proper_gift_coupan_name'] = 'Please Enter the correct eGift Voucher Code';
+	$lang['halfday.This_eGift_Voucher_Code_Not_Vaolid_for_You'] = 'This eGift Voucher Code is not correct.';
+	$lang['halfday.Please_Enter_Proper_Discount_Coupon_Code'] = 'Please enter the correct Discount Coupon code';
+	$lang['halfday.This_Discount_Coupon_Code_Not_Vaolid_for_You'] = 'This Discount Coupon Code is not correct.';
+	$lang['halfday.no_data_found'] = 'No Data Found';
+	$lang['halfday.menu_booked'] = 'Your menu has been successfully booked.';
+	$lang['halfday.msg_menuselect_option'] = 'Select One Main Dish and One Alternative.';
+	$lang['halfday.You_can_not_select_more_than_two_lunch'] = 'Please select one Main Lunch and one Alternative Side Dish only';
+	$lang['halfday.Please_Select_one_Main_Lunch_and_one_Alternative_Side_Dish'] = 'Please Select one Main Lunch and one Alternative Side Dish.';
+	$lang['halfday.Please_Select_Atleast_two_lunch'] = 'Please Select one Main Lunch and one Alternative Side Dish.';
+	$lang['fullday.Please_select_another_day_plan_instead_of_cancel_plan'] = 'Please select another day after cancelling the plan';
+?>

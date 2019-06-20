@@ -1,0 +1,123 @@
+.help-inline {
+    margin-top: 6px;
+}
+/*.help-inline {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+}*/
+.help-inline {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.help-block, .help-inline {
+    color: #FF0000;
+}.alert-error {
+color: #b94a48;
+background-color: #f2dede;
+border-color: rgb(238, 211, 215);
+}
+.alert-error span p
+{
+	margin: 0px;
+}
+.closemsg {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 0px;
+	width: 9px;
+	height: 9px;
+	background-repeat: no-repeat !important;
+	float:right;
+	cursor:pointer;
+	background-image: url("../img/remove-icon-small.png") !important;
+}
+
+.loader_ajax
+{
+	display:none;
+}
+
+
+.msg-color {
+    color: #993333;
+    font-family: 'noticia_textregular';
+    font-size: 20px;
+}
+
+.close {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 0px;
+	width: 9px;
+	height: 9px;
+	background-repeat: no-repeat !important;
+	background-image: url("../img/remove-icon-small.png") !important;
+}
+.alert span {
+display: block;
+}
+
+/**** ajax loader css ***/
+ #dvLoading
+{
+   background:url(../img/black_bg.png) repeat ;
+   position: fixed;
+   z-index: 1000000;
+   height: 100%;
+   width: 100%;
+   display: none;
+   
+}
+.dvLoading{
+	 /*background:url(../images/page_loader2.gif) no-repeat center center;*/
+	  background:url(../img/page_loader2.gif) no-repeat center center;
+	 height: 55px;
+  	 width: 54px;;
+   margin: 10% 50%;
+}
+.big-label
+{
+	color: #666666;
+    float: left;
+    font-family: 'armataregular';
+    font-size: 15px;
+    font-weight: normal;
+    padding-top: 5px;
+    text-align: left;
+    width: 170px;
+}
+
+.calmsg {
+	opacity: 0.9;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	background: rgb(195, 162, 230);
+	font-size: 16px;
+	z-index: 10;
+}
+.cblk {
+	color : #000000 !important;
+}
+/*
+input[type="text"].spinner,
+input[type="password"].spinner,
+input[type="datetime"].spinner,
+input[type="datetime-local"].spinner,
+input[type="date"].spinner,
+input[type="month"].spinner,
+input[type="time"].spinner,
+input[type="week"].spinner,
+input[type="number"].spinner,
+input[type="email"].spinner,
+input[type="url"].spinner,
+input[type="search"].spinner,
+input[type="tel"].spinner,
+input[type="color"].spinner {
+  background-image: url("../img/input-spinner.gif") !important;
+  background-repeat: no-repeat;
+  background-position: right 30px;
+}*/

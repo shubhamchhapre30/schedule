@@ -1,0 +1,57 @@
+# This is a sample build configuration for Javascript.
+# Check our guides at https://confluence.atlassian.com/x/VYk8Lw for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment .
+image: ubuntu:15.10
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          image:
+              name: schedullo/pipeline-agent:latest
+              username: $DOCKER_USERNAME
+              password: $DOCKER_PASSWORD
+              email: $DOCKER_EMAIL
+          script: # Create Zip artifact
+            - make package VERSION="Build_Hash_"${BITBUCKET_COMMIT}
+            - node --version
+            - zip --version
+            - pwd
+            # Build the AWS Key file for login
+            - sh ./Pipeline_aws_credentials.sh
+            # Deploy to Beanstalk
+            - make deploy DEPLOY_STRAT=deploy:bluegreen VERSION="Build_Hash_"${BITBUCKET_COMMIT} ENVIRONMENT=dev
+            - wait 
+            - curl https://dev.schedullo.com/TestMin
+    stagging:
+      - step:
+          image:
+              name: schedullo/pipeline-agent:latest
+              username: $DOCKER_USERNAME
+              password: $DOCKER_PASSWORD
+              email: $DOCKER_EMAIL
+          script: # Create Zip artifact
+            - make package VERSION="Build_Hash_"${BITBUCKET_COMMIT}
+            # Build the AWS Key file for login
+            - sh ./Pipeline_aws_credentials.sh
+            # Deploy to Beanstalk
+            - make deploy DEPLOY_STRAT=deploy:bluegreen VERSION="Build_Hash_"${BITBUCKET_COMMIT} ENVIRONMENT=test
+            - wait 
+            - curl https://test.schedullo.com/TestMin
+    master:
+      - step:
+          image:
+              name: schedullo/pipeline-agent:latest
+              username: $DOCKER_USERNAME
+              password: $DOCKER_PASSWORD
+              email: $DOCKER_EMAIL
+          script: # Create Zip artifact
+            - make package VERSION="Build_Hash_"${BITBUCKET_COMMIT}
+            # Build the AWS Key file for login
+            - sh ./Pipeline_aws_credentials.sh
+            # Deploy to Beanstalk
+            - make deploy DEPLOY_STRAT=deploy:bluegreen VERSION="Build_Hash_"${BITBUCKET_COMMIT} ENVIRONMENT=prod
+            - wait 
+            - curl https://app.schedullo.com/TestMin

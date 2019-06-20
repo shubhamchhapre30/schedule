@@ -1,0 +1,33 @@
+///////////////////////////////////////////////////////////////////////////////////
+// 
+// Advanced Power of PHP
+// ---------------------
+// http://www.apphp.com
+// 
+// ApPHP Calendar
+//
+// Version: 1.0.2
+//
+///////////////////////////////////////////////////////////////////////////////////
+
+Software requirements: PHP 5.0 or later version.
+
+To install ApPHP Calendar, you should have to extract the ApPHP Calendar ZIP file. 
+It depends on the operating system you use. Once extracted, you will have a directory
+containing the ApPHP Calendar script.
+
+Upload all content of this directory to your webserver, either by copying the 
+directory or by using an FTP program.
+
+Type in yuor browser code_example.php
+
+If you are running on your own computer, this will be
+
+   http://localhost/{calendar directory}/code_example.php
+
+or if on a live server:
+
+   http://{www.mydomain.com}/code_example.php
+   
+Congratulations, you now have ApPHP Calendar v.1.x.x. Installed!   
+

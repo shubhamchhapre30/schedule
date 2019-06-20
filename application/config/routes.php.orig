@@ -1,0 +1,92 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+/*
+| -------------------------------------------------------------------------
+| URI ROUTING
+| -------------------------------------------------------------------------
+| This file lets you re-map URI requests to specific controller functions.
+|
+| Typically there is a one-to-one relationship between a URL string
+| and its corresponding controller class/method. The segments in a
+| URL normally follow this pattern:
+|
+|	example.com/class/method/id/
+|
+| In some instances, however, you may want to remap this relationship
+| so that a different class/function is called than the one
+| corresponding to the URL.
+|
+| Please see the user guide for complete details:
+|
+|	http://codeigniter.com/user_guide/general/routing.html
+|
+| -------------------------------------------------------------------------
+| RESERVED ROUTES
+| -------------------------------------------------------------------------
+|
+| There area two reserved routes:
+|
+|	$route['default_controller'] = 'welcome';
+|
+| This route indicates which controller class should be loaded if the
+| URI contains no data. In the above example, the "welcome" class
+| would be loaded.
+|
+|	$route['404_override'] = 'errors/page_missing';
+|
+| This route will tell the Router what URI segments to use if those provided
+| in the URL cannot be matched to a valid route.
+|
+*/
+
+$route['default_controller'] = "home";
+$route['404_override'] = 'home';
+
+$route['privacy-policy'] = 'home/content/privacy-policy';
+$route['terms-and-condition'] = 'home/content/terms-and-condition';
+
+$route['contactus'] = 'home/contactus';
+
+$route['Condiciones-de-uso'] = 'home/payment_info1';
+$route['Condiciones-generales-de-contratacion'] = 'home/payment_info2';
+
+//$route['calender/myCalender'] = 'calendar/myCalendar';
+
+<<<<<<< HEAD
+//Rest Api routes
+
+$route['api/v1/login'] = 'APIS/v1/API/login';
+$route['api/v1/tasklist'] = 'APIS/v1/API/getTaskList';
+$route['api/v1/kanbantask'] = 'APIS/v1/API/getKanbanTask';
+$route['api/v1/opentask'] = 'APIS/v1/API/openTaskList';
+$route['api/v1/overduetask'] = 'APIS/v1/API/overDueTaskList';
+$route['api/v1/userstatus'] = 'APIS/v1/API/getUserStatus';
+$route['api/v1/deletetask'] = 'APIS/v1/API/deleteTask';
+$route['api/v1/projectteam'] = 'APIS/v1/API/getProjectTeam';
+$route['api/v1/userdetail'] = 'APIS/v1/API/getUserdetail';
+$route['api/v1/comment'] ='APIS/v1/API/addComment';
+$route['api/v1/addTask'] = 'APIS/v1/API/addTask';
+$route['api/v1/updateTask'] = 'APIS/v1/API/updateTask';
+=======
+//
+
+
+//rest api routes
+
+$route['api/v1/userlist(/:any)?$'] = 'APIS/api/getUserList/$0';
+$route['api/v1/user(/:any)?$'] = 'APIS/api/getUserInfo/$0';
+$route['api/v1/userupdate(/:any)(/:any)'] = 'APIS/api/updateUserDetail/$0/$1';
+$route['api/v1/userdelete(/:any)?$'] = 'APIS/api/deleteUser/$0';
+$route['api/v1/useradd(/:any)?$'] = 'APIS/api/addUser/$0';
+$route['api/v1/customerlist(/:any)?$'] = 'APIS/api/getCustomerList/$0';
+$route['api/v1/customer(/:any)(/:any)'] = 'APIS/api/getCustomerDetail/$0/$1';
+$route['api/v1/customerdelete(/:any)(/:any)'] = 'APIS/api/deleteCustomer/$0/$1';
+$route['api/v1/customerupdate(/:any)(/:any)'] = 'APIS/api/updateCustomer/$0/$1';
+$route['api/v1/customeradd(/:any)?$'] = 'APIS/api/addCustomer/$0';
+>>>>>>> 6d4d45c0e8ec9235f5f98a9bf0f7095768167d1e
+
+//OAuth2 routes
+$route['OAuth2/authorize'] = "OAuth2/check_user_authorization";
+$route['OAuth2/token']= "OAuth2/get_access_token";
+$route['OAuth2/resource'] = 'OAuth2/check_token_validation';
+/* End of file routes.php */
+/* Location: ./application/config/routes.php */

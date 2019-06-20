@@ -1,0 +1,69 @@
+.help-inline {
+    margin-top: 6px;
+}
+/*.help-inline {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+}*/
+.help-inline {
+    display: inline-block;
+    padding-left: 5px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.help-block, .help-inline {
+    color: #FF0000;
+}.alert-error {
+color: #b94a48;
+background-color: #f2dede;
+border-color: rgb(238, 211, 215);
+}
+.alert-error span p
+{
+	margin: 0px;
+}
+.closemsg {
+	display: inline-block;
+	margin-top: 0px;
+	margin-right: 0px;
+	width: 9px;
+	height: 9px;
+	background-repeat: no-repeat !important;
+	float:right;
+	cursor:pointer;
+	background-image: url("../img/remove-icon-small.png") !important;
+}
+
+#dvLoading
+{
+   background:url(../mobile-js-css/img/black_bg.png) repeat ;
+   position: fixed;
+   z-index: 1000000;
+   height: 100%;
+   width: 100%;
+   display: none;
+   
+}
+.dvLoading{
+	 /*background:url(../images/page_loader2.gif) no-repeat center center;*/
+	  background:url(../mobile-js-css/img/page_loader3.gif) no-repeat center center;
+	 height: 55px;
+  	 width: 54px;
+   margin: 10% 50%;
+}
+.chr{
+	color:#FF0000;
+}
+.req{
+    color: #e02222;
+    font-size: 12px;
+    padding-left: 2px;
+}
+select.help-inline{
+	color : #333333;
+}
+.addtaskfontsize{
+	font-size:16px !important;
+}

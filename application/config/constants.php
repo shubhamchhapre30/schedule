@@ -1,0 +1,282 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+/*
+|--------------------------------------------------------------------------
+| File and Directory Modes
+|--------------------------------------------------------------------------
+|
+| These prefs are used when checking and setting modes when working
+| with the file system.  The defaults are fine on servers with proper
+| security, but you may wish (or even need) to change the values in
+| certain environments (Apache running a separate process for each
+| user, PHP under CGI with Apache suEXEC, etc.).  Octal values should
+| always be used to set the mode correctly.
+|
+*/
+define('FILE_READ_MODE', 0644);
+define('FILE_WRITE_MODE', 0666);
+define('DIR_READ_MODE', 0755);
+define('DIR_WRITE_MODE', 0777);
+
+/*
+|--------------------------------------------------------------------------
+| File Stream Modes
+|--------------------------------------------------------------------------
+|
+| These modes are used when working with fopen()/popen()
+|
+*/
+
+define('FOPEN_READ',							'rb');
+define('FOPEN_READ_WRITE',						'r+b');
+define('FOPEN_WRITE_CREATE_DESTRUCTIVE',		'wb'); // truncates existing file data, use with care
+define('FOPEN_READ_WRITE_CREATE_DESTRUCTIVE',	'w+b'); // truncates existing file data, use with care
+define('FOPEN_WRITE_CREATE',					'ab');
+define('FOPEN_READ_WRITE_CREATE',				'a+b');
+define('FOPEN_WRITE_CREATE_STRICT',				'xb');
+define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
+
+
+/** cache days ***/
+define('CACHE_VALID_SEC',864000);
+
+
+/*All Error Message*/
+/*Login Form validation*/
+define('INVALID_CAPTCHA',"Invalid Captcha");
+//define('INVALID_USERNAME',"Invalid UserName or Password.");
+
+/*End login form validation*/
+
+// change email
+
+define('ALREADY_ASSOC','You are already associated with an email.');
+define('ASSOC_WITH_OTHER','This email is already associated with another business.');
+define('CHANGE_SUCC','Email has been successfully changed.');
+define('SEND_SUCC','Email has been successfully sent.');
+
+// change password
+
+define('WRONG_PASS','Your old password is wrong.');
+define('CHANGE_SUCCESS','Password has been successfully changed.');
+
+define('ALBUM_SUCCESS_UPLOAD','Images successfully uploaded.');
+
+define('LOG_OUT_SUCCESS','Your have logged out successfully.');
+define('NEW_USER_ADDED','You are successfully registered. please check your email for more information.');
+define('FORGET_SEND','Your login has been sent to your email address. Please check.');
+define('ACCOUNT_VERIFY','your account has been activated.');
+define('ACCOUNT_VERIFY_FAIL','Sorry ! your link has expired.');
+define('INQUIRY_SUBMIT_SUCCESS','Your inquiry has been sent successfully !');
+define('INQUIRY_SUBMIT_FAIL','Sorry ! your inquiry failed!');
+define('NEWSLETTER_SUBSCRIBE_SUCCESS','Thank you for subscribing to our newsletter.');
+define('NEWSLETTER_UNSUBSCRIBE_SUCCESS','You have successfully unsubscribed.');
+
+
+define('ACTIVATE_SUCCESS','User activated successfully.');
+define('ACTIVATE_FAIL','Sorry ! your activation link has expired.');
+
+/* End of file constants.php */
+/* Location: ./application/config/constants.php */
+define('PAY_SUC','Payment has been successful.');
+define('PAY_FAIL','Payment has failed.');
+
+/*Login msg*/
+//define('ACC_INACTIVE','Your account is inactive. Please contact your administrator.');
+//define('ACC_SUSPEND','Your account is suspended. Please contact your Administrator.');
+//define('EMAIL_NOT_FOUND','Email address not found.');
+define('INVALID_EMAIL','Please enter a valid username or password.');
+define('LOGOUT_SUCCESS','You have successfully logged out.');
+
+/*CUSTOMER Message*/
+define('ADD_NEW_CUSTOMER','Record has been added successfully.');
+define('UPDATE_CUSTOMER','Customer updated successfully.');
+define('ACTIVE_RECORD','Record activated');
+define('INACTIVE_RECORD','Record deactivated');
+define('DELETE_RECORD','Record deleted successfully.');
+
+/*BRANCH Message*/
+define('ADD_NEW_BRANCH','Record has been added successfully.');
+define('UPDATE_BRANCH','Record has been updated successfully.');
+define('DELETE_BRANCH','Record has been deleted successfully.');
+define('ACTIVE_BRANCH','Record has been activated successfully.');
+define('INACTIVE_BRANCH','Record has been deactivated successfully.');
+
+define('ADD_NEW_BANNER','Record has been added successfully.');
+define('UPDATE_BANNER','Record has been updated successfully.');
+define('DELETE_BANNER','Record has been deleted successfully.');
+define('ACTIVE_BANNER','Record has been activated successfully.');
+define('INACTIVE_BANNER','Record has been deactivated successfully.');
+
+define('ADD_NEW_SERVICES_CATEGORY','Record has been added successfully.');
+define('UPDATE_SERVICES_CATEGORY','Record has been updated successfully.');
+define('DELETE_SERVICES_CATEGORY','Record has been deleted successfully.');
+define('ACTIVE_SERVICES_CATEGORY','Record has been activated successfully.');
+define('INACTIVE_SERVICES_CATEGORY','Record has been deactivated successfully.');
+
+define('PROFILE_SUCCESS','Profile updated successfully.');
+define('CHANGEPASSWORD_SUCCESS','Your password has been successfully updated');
+define('timesuccess','You have set time successfully');
+
+define('DELETE_RECORD_STAFF','Staff deleted successfully.');
+
+define('THANKYOU_MAIL_SENT','Your mail was sent successfully.');
+define('SMS_SENT_FAIL','Your SMS did not sent successfully.');
+define('SMS_SENT_SUCCESS','Your SMS has been sent successfully.');
+
+
+/*Services Message*/
+define('ADD_NEW_SERVICE','Record has been added successfully.');
+define('UPDATE_SERVICE','Record has been updated successfully.');
+define('DELETE_SERVICES','Service Deleted successfully.');
+define('ACTIVE_SERVICE','Record has been activated successfully.');
+define('INACTIVE_SERVICE','Record has been inactivated successfully.');
+
+/* Notification Message */
+define('NOTIFICATION','Record has been Updated successfully.');
+define('REMINDER','Record has been Updated successfully.');
+define('INSERTDATE','Record has been Inserted successfully.');
+
+/*Contact Message*/
+define('ADD_NEW_CONTACT','Record has been added successfully.');
+define('UPDATE_CONTACT','Customer updated successfully.');
+define('ACTIVE_CONTACT','Record Activated');
+define('INACTIVE_CONTACT','Record Inactivated');
+define('DELETE_CONTACT','Record Deleted successfully.');
+
+/*Tax Message*/
+define('ADD_NEW_TAX','Record has been added successfully.');
+define('UPDATE_TAX','Customer updated successfully.');
+define('ACTIVE_TAX','Record Activated');
+define('INACTIVE_TAX','Record Inactivated');
+define('DELETE_TAX','Record Deleted successfully.');
+
+// Invoice Message
+
+/*Invoice Message*/
+define('ADD_NEW_INVOICE','Record has been added successfully.');
+define('UPDATE_INVOICE','Customer updated successfully.');
+define('ACTIVE_INVOICE','Record Activated');
+define('INACTIVE_INVOICE','Record Inactivated');
+define('DELETE_INVOICE','Record Deleted successfully.');
+define('SENT_MSG','Message sent successfully.');
+
+
+/*Export  Message*/
+define('ADD_NEW_EXPORT','Record has been added successfully.');
+define('UPDATE_EXPORT','Customer updated successfully.');
+define('ACTIVE_EXPORT','Record Activated');
+define('INACTIVE_EXPORT','Record Inactivated');
+define('DELETE_EXPORT','Record Deleted successfully.');
+
+define("RESET_PASSWORD_SUCCESS","Your Password has been reset.");
+define("ALREADY_RESET_PASSWORD","Reset password link has expired.");
+define("FORGET_PASSWORD_SUCCESS","Forget password link has been sent to your email address : ");
+//define("INACTIVE_ACCOUNT","Your account is inactive. Please contact your administrator");
+//define("ACCOUNT_SUSPEND","Your account is suspended. Please contact your administartor");
+/* End of file constants.php */
+/* Location: ./application/config/constants.php */
+
+//Company Registration Confirmation Message
+define("ADMIN_CONFIRMATION","Your request has been sent to the administrator. Please wait for a response.");
+
+// Project related constants
+define("PROJECT_COMMENT_ADD","Comment added.");
+define("PROJECT_COMMENT_DELETE","Comment deleted.");
+
+define("DELETED_USER","User deleted successfully.");
+define("USER_ADDED_PROJECT","User successfully added to the Project.");
+define("USER_DELETED_PROJECT","User successfully deleted from the Project.");
+define("FILE_ADDED_PROJECT","File successfully uploaded to the Project.");
+define("FILE_DELETED_PROJECT","File successfully deleted from the Project.");
+define("PROJECT_CREATED","Project created successfully.");
+define("PROJECT_UPDATED","Project updated successfully.");
+define("PROJECT_DELETED","Project deleted successfully.");
+define("FILE_REPLACED_PROJECT","File successfully replaced.");
+define("TASK_COMPLETED","Task completed successfully.");
+define("TASK_DELETED","Task deleted successfully.");
+define("TASK_REALLOCATED","Task reallocated successfully.");
+define("TASK_UNLINKED","Task unlinked successfully.");
+
+
+
+
+
+//Task notificataction constants
+define("TASK_ASSIGNED_TO_YOU","A new task has been assigned to you.");
+define("SCHEDULLO_EMAILDEBUG",getenv('SCHEDULLO_EMAILDEBUG'));
+
+
+define("CMT_TEXT_SIZE","500");
+ /*There is defined error path for showing proper error message through custom error class*/
+define('VIEWPATH',FCPATH.APPPATH.'views/');
+
+
+/* define version constant for js & Css file */
+
+define("VERSION", "17.1");
+
+/* define minified constant for js*/
+
+if(getenv('SCHEDULLO_ENV') == 'test' || getenv('SCHEDULLO_ENV') == 'prod' || getenv('SCHEDULLO_ENV') == 'dev'){
+    $min = '.min';
+}else{
+    $min = '';
+}
+define("MINIFIED", $min);
+/**
+ * private key for create salt on API calling
+ *
+ */
+
+define("PRIVATEKEY", "blu3@T0pcash-C0wss5X");
+
+
+/**
+ * define constants for outlook synchronization
+ * 
+ */
+$OUTLOOK_CLIENT_ID = getenv('OUTLOOK_CLIENT_ID') ? getenv('OUTLOOK_CLIENT_ID') : '';
+$OUTLOOK_SECRET_KEY = getenv('OUTLOOK_SECRET_KEY') ? getenv('OUTLOOK_SECRET_KEY') : '';
+define("OUTLOOK_CLIENT_ID", $OUTLOOK_CLIENT_ID);
+define("OUTLOOK_SECRET_KEY", $OUTLOOK_SECRET_KEY);
+
+
+/**
+ * Constants related to XERO integration
+ */
+$CONSUMER_KEY = getenv('CONSUMER_KEY') ? getenv('CONSUMER_KEY') : '';
+$CONSUMER_SECRET = getenv('CONSUMER_SECRET') ? getenv('CONSUMER_SECRET') : '';
+define("CONSUMER_KEY",$CONSUMER_KEY);
+define("CONSUMER_SECRET",$CONSUMER_SECRET);
+define("XERO_USERAGENT","schedullo");
+define("XRO_APP_TYPE", "Public");
+
+
+/**
+ * google captcha secret & site key
+*/
+$GOOGLE_SITE_KEY = getenv('GOOGLE_SITE_KEY') ? getenv('GOOGLE_SITE_KEY') : '';
+$GOOGLE_SECRET_KEY = getenv('GOOGLE_SECRET_KEY') ? getenv('GOOGLE_SECRET_KEY') : '';
+define('GOOGLE_SITE_KEY',$GOOGLE_SITE_KEY);
+define('GOOGLE_SECRET_KEY',$GOOGLE_SECRET_KEY);
+
+/**
+ * gmail calendar Integration details
+ */
+
+$GMAIL_CLIENT = getenv('GMAIL_CLIENT') ? getenv('GMAIL_CLIENT') : '';
+$GMAIL_SECRET = getenv('GMAIL_SECRET') ? getenv('GMAIL_SECRET') : '';
+define('GMAIL_CLIENT',$GMAIL_CLIENT);
+define('GMAIL_SECRET',$GMAIL_SECRET);
+define('GMAIL_SCOPES','https://www.googleapis.com/auth/calendar');
+define('GMAIL_TOKEN_URL','https://accounts.google.com/o/oauth2/token');
+define('GMAIL_AUTH_URL','https://accounts.google.com/o/oauth2/v2/auth');
+
+
+/**
+ * JIRA settings
+ */
+
+define("JIRA_URL", "https://schedullo.atlassian.net/");
+define("JIRA_ACCESS","cm9zaGFuLnBhcm1hckBnbWFpbC5jb206WG9zc0NvZGVAMTIz");

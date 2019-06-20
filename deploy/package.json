@@ -1,0 +1,20 @@
+{
+  "name": "aws-docker-deploy",
+  "private": true,
+  "author": "TV Service Team",
+  "version": "1.0.0",
+  "description": "Docker image to deploy artifacts",
+  "keywords": [
+    "deploy"
+  ],
+  "dependencies": {
+    "babel": "^5.8.23",
+    "gulp": "^3.9.0",
+    "aws-deploy-utils": "^1.0.6",
+    "yargs": "^3.24.0"
+  },
+  "devDependencies": {
+    "gulp-util": "^3.0.6",
+    "js-yaml": "^3.4.1"
+  }
+}

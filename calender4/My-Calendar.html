@@ -1,0 +1,1509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="ApPHP Company - Advanced Power of PHP">
+    <meta name="generator" content="ApPHP Calendar">
+    <title>ApPHP Calendar</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<center>
+<script type='text/javascript'>
+			function JumpToDate(){
+				var jump_day   = (document.getElementById('jump_day')) ? document.getElementById('jump_day').value : '';
+				var jump_month = (document.getElementById('jump_month')) ? document.getElementById('jump_month').value : '';
+				var jump_year  = (document.getElementById('jump_year')) ? document.getElementById('jump_year').value : '';
+				var view_type  = (document.getElementById('view_type')) ? document.getElementById('view_type').value : '';
+				
+				__doPostBack('view', view_type, jump_year, jump_month, jump_day);
+			}
+		
+			function __doPostBack(action, view_type, year, month, day)
+			{			
+				var action    = (action != null) ? action : 'view';
+				var view_type = (view_type != null) ? view_type : 'monthly';
+				var year      = (year != null) ? year : '2014';
+				var month     = (month != null) ? month : '07';
+				var day       = (day != null) ? day : '23';
+			
+				document.location.href = 'index.php?action='+action+'&view_type='+view_type+'&year='+year+'&month='+month+'&day='+day;		
+			}
+		</script>
+		<div id='calendar' style='width:1170px;'>
+<table class='month'>
+<tr><th colspan='7'><table class='table_navbar'>
+<tr><th class='tr_navbar'>
+<a href="javascript:__doPostBack('view','monthly','2014','06','23')" title='Previous' class="calprev"> <i class="calenderstrip calprev"> </i> </a> 
+
+July - 2014 
+
+<a href="javascript:__doPostBack('view','monthly','2014','08','23')" title='Next' class="calnext"><i class="calenderstrip calnext"> </i></a>
+
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr class='tr_days'><td class='th'>Mon</td><td class='th'>Tue</td><td class='th'>Wed</td><td class='th'>Thu</td><td class='th'>Fri</td><td class='th'>Sat</td><td class='th'>Sun</td></tr>
+<tr class='tr' style='height:83px;'>
+<td class='td_empty'>&nbsp;</td>
+<td class='td_empty'>&nbsp;</td>
+<td class='td'>
+	<div class="td-date"> 01 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel perrotlabel"> 4h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox taskmedium">
+			<span class="task-desc"> <i class="calenderstrip caliconmedium"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasknone">
+			<span class="task-desc"> <i class="calenderstrip caliconnone"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		
+	</div>
+	
+	
+
+</td>
+<td class='td'>
+	<div class="td-date"> 02 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox taskmedium">
+			<span class="task-desc"> <i class="calenderstrip caliconmedium"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+		
+	</div>
+	<div class="btnview">
+	<a href="#" class="viewmore"> view more </a>
+	</div>
+	
+</td>
+<td class='td'>
+<div class="td-date"> 03 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox taskmedium">
+			<span class="task-desc"> <i class="calenderstrip caliconmedium"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 04 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox taskmedium">
+			<span class="task-desc"> <i class="calenderstrip caliconmedium"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+	 
+	 <div class="btnview">
+	<a href="#" class="viewmore"> view more </a>
+	</div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 05 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+</td>
+</tr>
+<tr class='tr' style='height:83px;'>
+<td class='td'>
+	<div class="td-date"> 06 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	 </td>
+<td class='td'>
+	<div class="td-date"> 07 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+	<div class="td-date"> 08 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+</td>
+<td class='td'>
+<div class="td-date"> 09 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+<div class="td-date"> 10 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 11 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 12 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+</tr>
+<tr class='tr' style='height:83px;'>
+<td class='td'>
+	<div class="td-date"> 13 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	 </td>
+<td class='td'>
+	<div class="td-date"> 14 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+	<div class="td-date">15 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+</td>
+<td class='td'>
+<div class="td-date"> 16 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+<div class="td-date"> 17<a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	
+
+</td>
+<td class='td'>
+<div class="td-date"> 18 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 19 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+
+</td>
+</tr>
+<tr class='tr' style='height:83px;'>
+<td class='td'>
+	<div class="td-date"> 20 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	 </td>
+<td class='td'>
+	<div class="td-date"> 21 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+		<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+</td>
+<td class='td'>
+	<div class="td-date"> 22 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 23 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+<div class="td-date"> 24 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	 
+
+</td>
+<td class='td'>
+<div class="td-date"> 25 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 26 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<!--<td class='td'>20</td>
+<td class='td'>21</td>
+<td class='td'>22</td>
+<td class='td_actday'>23</td>
+<td class='td'>24</td>
+<td class='td'>25</td>
+<td class='td'>26</td>-->
+</tr>
+<tr class='tr' style='height:83px;'>
+<td class='td'>
+	<div class="td-date"> 27 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	<div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 28<a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td'>
+<div class="td-date"> 29<a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	 
+	 <div class="task-lable">
+		<div class="taskbox taskhigh">
+			<span class="task-desc"> <i class="calenderstrip caliconhigh"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="taskbox tasklow">
+			<span class="task-desc"> <i class="calenderstrip caliconlow"> </i> Task 1 </span>
+			<span class="task-hrs"> 2hs </span>
+			<div class="clearfix"> </div>
+		</div>
+		 
+	 </div>
+
+</td>
+<td class='td'>
+<div class="td-date"> 30<a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+	
+
+</td>
+<td class='td'>
+<div class="td-date"> 31 <a href="#"> <i class="calenderstrip caladdicon"> </i> </a> </div>
+	<div class="task-list">
+		<ul>
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> capacity </div> </li>
+					<li>  <div class="commonlabel greenlabel"> 5h </div></li>
+				</ul>
+			
+			<li> 
+				<ul>
+					<li> <div class="commonlabel greenlabel"> allocated </div> </li>
+					<li>  <div class="commonlabel redlabel"> 6h </div></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="task-info">
+		<ul>
+			<li> 
+				<span class="tasklab-info">Overdue : </span>
+				<span class="task-num txtred"> 1 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Due : </span>
+				<span class="task-num"> 2 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Completed : </span>
+				<span class="task-num"> 4 </span>
+			</li>
+			<li> 
+				<span class="tasklab-info">Schedulled :</span>
+				<span class="task-num"> 2 </span>
+			</li>
+		</ul>
+	</div>
+</td>
+<td class='td_empty'>&nbsp;</td>
+<td class='td_empty'>&nbsp;</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

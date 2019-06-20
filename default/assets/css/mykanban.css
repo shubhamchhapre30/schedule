@@ -1,0 +1,52 @@
+
+.collapsed-rotation {
+	    -webkit-backface-visibility: hidden;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		transform: rotate(90deg);
+		-webkit-transform-origin: 0 100%;
+		-moz-transform-origin: 0 100%;
+		-ms-transform-origin: 0 100%;
+		transform-origin: 0 100%;
+	}
+	h2.collapse_text{
+            cursor: pointer;
+	    display: inline-block;
+	    font-size: 16px;
+	    font-weight: bold;
+	    height: 20px;
+	    letter-spacing: 1px;
+	    line-height: 20px;
+	    margin: 0;
+	    padding: 0;
+	    position: relative;
+	    text-transform: uppercase;
+	    vertical-align: middle;
+	    white-space: nowrap;
+	}
+	.pr_set{
+		width:15% !important;
+		margin-top: -5% !important;
+		margin-left: -5% !important;
+	}
+	
+	.collapsed-info-wrapper {
+position: relative;
+padding: 8px 4px;
+/*min-height: 200px;*/
+}
+
+.board-collapsedColumnNameCell.column-collapsed {
+display: table-cell;
+}
+.column-collapsed {
+min-width: 30px;
+
+width: 30px;
+overflow: hidden;
+text-align: center;
+
+}
+
+ /*.kanban-table .table td.column-collapsed { padding: 8px 18px 8px 3px; !important;} */

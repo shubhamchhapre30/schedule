@@ -1,0 +1,135 @@
+@media (max-width:1366px){
+
+}
+
+@media (max-width:1280px) {
+
+}
+
+
+@media (max-width:1024px){
+	table tbody#kanbanview tr td:nth-last-child(2), table tbody#filtertasks tr td:nth-last-child(2), table tbody#tasklist tr td:nth-last-child(2), table tbody#overdue_tasks tr td:nth-last-child(2), table tbody#duetoday tr td:first-child{max-width: 615px; white-space: normal; word-wrap: break-word;}
+
+}
+
+@media (min-widht:769px){
+
+
+}
+
+@media (max-width: 980px) {
+
+.title-block p { margin:0 15%;}
+table tbody#kanbanview tr td:nth-last-child(2), table tbody#filtertasks tr td:nth-last-child(2), table tbody#tasklist tr td:nth-last-child(2), table tbody#overdue_tasks tr td:nth-last-child(2), table tbody#duetoday tr td:first-child{max-width: 600px; white-space: normal; word-wrap: break-word;}
+
+
+}
+
+@media (max-width: 800px) {
+.header-top .navbar-nav > li > a { padding:12px 12px; font-size:13px;}
+
+.title-block p { margin:0 10%;}
+}
+
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){
+.title-heading { font-size:26px;}
+.home-list li a { font-size:17px; line-height:28px; padding:10px 5px;}
+.stripicon.todolisticon { background-position:0px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.newtaskicon { background-position:-24px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.mywatchicon { background-position:-48px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.kanbanicon { background-position:-72px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.weeklycalicon { background-position:-96px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.myprojecticon { background-position:-120px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.dashboardicon { background-position:-144px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+
+.btn.btn-sm {font-size:14px; }
+.btn.btn-sm {font-size:20px; color:#fafafa;  font-family: 'open_sanssemibold';  padding:6px 10px; min-width:76px;}
+.btn.btn-xm {font-size:20px; color:#fafafa;  font-family: 'open_sanssemibold';  padding:2px 8px; }
+
+.horizontal-form .controls.set-controls { width:86%; float:left;}
+.pera1 { font-family: 'open_sanslight'; font-size:18px; color:#212121; line-height:22px;  }
+
+.dashborad-list li a { font-size:18px; font-weight:normal}
+
+
+}
+
+
+@media (max-width: 768px) {
+.header-top .navbar-nav > li > a { padding:12px 12px; font-size:13px;}
+.btn.btn-sm {font-size:20px; color:#fafafa;  font-family: 'open_sanssemibold';  padding:6px 10px; min-width:76px;}
+
+.pera1 { font-size:18px;}
+.dashborad-list li a { font-size:18px; font-weight:normal}
+table tbody#kanbanview tr td:nth-last-child(2), table tbody#filtertasks tr td:nth-last-child(2), table tbody#tasklist tr td:nth-last-child(2), table tbody#overdue_tasks tr td:nth-last-child(2), table tbody#duetoday tr td:first-child{max-width: 500px; white-space: normal; word-wrap: break-word;}
+
+ 
+
+}
+@media (max-width: 767px) {
+.header-top .navbar-nav > li > a { padding:12px 12px; font-size:13px;}
+.header-top .navbar-nav > li.loginbtn { padding:0px;}
+.header-top .navbar-nav > li { border-bottom:1px solid #2f2d28;}
+
+}
+
+
+
+
+
+@media (max-width: 640px) {
+.register-block, .login-block { width:100%; padding:40px 15px;}
+.grey-block { width:100%; padding:20px 10px;}
+.lighgrey-block { width:100%; padding:30px 15px;}
+.btn.btn-sm {font-size:14px; }
+.horizontal-form .control-group { margin-bottom:10px;}
+table tbody#kanbanview tr td:nth-last-child(2), table tbody#filtertasks tr td:nth-last-child(2), table tbody#tasklist tr td:nth-last-child(2), table tbody#overdue_tasks tr td:nth-last-child(2), table tbody#duetoday tr td:first-child{max-width: 450px; white-space: normal; word-wrap: break-word;}
+.status-bx{min-width: 68px;}
+.txt-heading1{max-width: 90px;}
+
+}
+
+
+@media (max-width: 480px) {
+.title-block p { margin:0 0;}
+.register-block { width:100%; padding:40px 15px;}
+.btn.large {padding: 8px 22px; font-size:26px;}
+
+.horizontal-form .control-label { font-size:16px;}
+
+.horizontal-form .controls.set-controls { width:84%; float:left;}
+ 
+
+}
+
+@media (max-width: 360px) {
+.title-heading { font-size:26px;}
+.login-block { width:100%; padding:40px 15px;}
+.header-top .navbar-brand { padding:12px 0px 8px 8px;}
+.home-list li a { font-size:17px; line-height:28px; padding:10px 5px;}
+.stripicon.todolisticon { background-position:0px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.newtaskicon { background-position:-24px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.mywatchicon { background-position:-48px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.kanbanicon { background-position:-72px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.weeklycalicon { background-position:-96px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.myprojecticon { background-position:-120px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.stripicon.dashboardicon { background-position:-144px -50px; width:24px; height:24px; position:relative; float:left; margin-right:5px }
+.dashborad-list li .btn.large { font-size:22px;}
+.dashborad-list li a { font-size:18px;}
+.header-top .headericon-list li a { padding:5px 0px;}
+.header-top .navbar-brand.logo-center img { width:175px;  }
+.header-top .navbar-brand img { width:28px;}    /* width:40px; modified on 26-09-2015 due to header logo and font size problem*/
+.header-top .navbar-brand { padding: 16px 0 8px 8px;}
+.horizontal-form .control-label-left { width:158px;}
+.horizontal-form .controls-left { margin-left:160px;}
+.header-top .navbar-brand img.logoset { width:175px}
+.page-title h2 { font-size:24px;}
+table tbody#kanbanview tr td:nth-last-child(2), table tbody#filtertasks tr td:nth-last-child(2), table tbody#tasklist tr td:nth-last-child(2), table tbody#overdue_tasks tr td:nth-last-child(2), table tbody#duetoday tr td:first-child{max-width: 300px; white-space: normal; word-wrap: break-word;}
+}
+
+@media (max-width: 320px) {
+.title-heading { font-size:24px;}
+
+.dashborad-list li { margin-bottom:15px;}
+.dashborad-list li a { font-size:17px;}
+}

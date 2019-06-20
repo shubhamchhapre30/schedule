@@ -1,0 +1,100 @@
+[
+	{
+	"task_title" : "My first task",
+	"task_description" : "Complete this task by ticking the checkbox (bottom right of the task)",
+	"task_due_date" : "Monday",
+	"task_schedule_date" : "Monday",
+	"task_status" : "In Progress",
+	"task_estimate_time" : "60",
+	"task_spent_time" : "43",
+	"task_priority" : "Low",
+        "task_color" : "0",
+        "steps": "FALSE",
+        "comment" : "FALSE"
+	},
+	{
+
+	"task_title" : "Right click on this task and delete it",
+	"task_description" : "",
+	"task_due_date" : "Monday",
+	"task_schedule_date" : "Monday",
+	"task_status" : "Ready",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" :"None",
+        "task_color" : "Purple",
+        "steps": "FALSE",
+        "comment" : "FALSE"
+	},
+	{
+
+	"task_title" : "You can also keep track of steps",
+	"task_description" : "",
+	"task_due_date" : "Tuesday",
+	"task_schedule_date" : "Tuesday",
+	"task_status" : "Ready",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" : "High",
+        "task_color" : "0",
+        "steps": "TRUE",
+        "comment" : "FALSE"
+	},
+	{
+
+	"task_title" : "Keep track of your task status and add comments (right click)",
+	"task_description" : "",
+	"task_due_date" : "Tuesday",
+	"task_schedule_date" : "Tuesday",
+	"task_status" : "In Progress",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" : "None",
+        "task_color" : "Blue",
+        "steps": "FALSE",
+        "comment" : "TRUE"
+	},
+	{
+
+	"task_title" : "Tasks can have colours for better visualisation",
+	"task_description" : "",
+	"task_due_date" : "Wednesday",
+	"task_schedule_date" : "Wednesday",
+	"task_status" : "Ready",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" : "None",
+        "task_color" : "Red",
+        "steps": "FALSE",
+        "comment" : "FALSE"
+	},
+	{
+
+	"task_title" : "Priority is represented by a coloured bar on the left",
+	"task_description" : "",
+	"task_due_date" : "Wednesday",
+	"task_schedule_date" : "Wednesday",
+	"task_status" : "Ready",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" : "High",
+        "task_color" : "0",
+        "steps": "FALSE",
+        "comment" : "FALSE"
+	},
+	{
+
+	"task_title" : "You can record time against a task by using the Timer",
+	"task_description" : "",
+	"task_due_date" : "Wednesday",
+	"task_schedule_date" : "Wednesday",
+	"task_status" : "Ready",
+	"task_estimate_time" : "0",
+	"task_spent_time" : "0",
+	"task_priority" : "None",
+        "task_color" : "Yellow",
+        "steps": "FALSE",
+        "comment" : "FALSE"
+	}
+
+]

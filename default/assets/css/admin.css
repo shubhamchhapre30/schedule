@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2017, 11:16:58 AM
+    Author     : xosscode
+*/
+
+.page-footer-fixed .page-container{
+    background: #eef1f5;
+}
+
+.custom_company_setting{
+    margin-top: 25px !important;
+    overflow-x: hidden ;
+    margin-bottom: 30px !important;
+}
+.label_des{
+    font-size: 11px !important;
+    color: #23527c !important;
+        
+}
+.dept_company_css{
+    margin-top: 15px;
+}
+
+.dept_label_css{
+    padding-top: 6px;
+}
+.company_top{
+        top: -4px;
+}
+
+.company_logo_css{
+    width: 160px;
+    height: 63px;
+}
+
+.company_icon_black{
+    color: black !important;
+}
+.company_force_time{
+    padding-top: 2px !important;
+}
+
+.company_trash_icon{
+    margin-left: 5px;
+    font-size: 15px !important;   
+}
+
+.logo_css{
+    height: 34px;
+    width: 230px;
+    margin-top: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    float: left;
+    border-radius: 4px 0 0 4px;
+}
+
+.form-control{
+        border-radius: 0px !important;
+}
